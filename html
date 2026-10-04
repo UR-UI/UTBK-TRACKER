@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UTBK Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- HEADER -->
+        <header>
+            <div>
+                <h1>DASHBOARD</h1>
+                <p>UTBK 2027</p>
+            </div>
+
+            <div class="countdown">
+                <strong id="daysLeft">H-60</strong>
+                <span>HARI MENUJU UTBK</span>
+            </div>
+        </header>
+
+
+        <!-- STATISTIK -->
+        <section class="stats">
+
+            <h2>STATISTIK HARI INI</h2>
+
+            <div class="target">
+                <span>Target harian: 180 soal/hari</span>
+                <span id="percentage">65%</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+        </section>
+
+
+        <!-- GRAFIK -->
+        <section class="charts">
+
+            <div class="card">
+                <h2>GRAFIK LATIHAN SOAL KUMULATIF</h2>
+
+                <canvas id="cumulativeChart"></canvas>
+            </div>
+
+            <div class="card">
+                <h2>TREN LATIHAN HARIAN</h2>
+
+                <canvas id="trendChart"></canvas>
+            </div>
+
+        </section>
+
+
+        <!-- LOG -->
+        <section class="card">
+
+            <h2>LOG LATIHAN SOAL</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Sub-Test</th>
+                        <th>Jumlah Soal</th>
+                        <th>Skor</th>
+                        <th>Sumber</th>
+                    </tr>
+                </thead>
+
+                <tbody id="practiceLog">
+
+                    <tr>
+                        <td>04/10</td>
+                        <td>PPU</td>
+                        <td>30</td>
+                        <td>25</td>
+                        <td>Modul A</td>
+                    </tr>
+
+                    <tr>
+                        <td>03/10</td>
+                        <td>PBM</td>
+                        <td>25</td>
+                        <td>21</td>
+                        <td>Tryout</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- HABIT -->
+        <section class="card">
+
+            <h2>HABIT TRACKER</h2>
+
+            <div class="habit">
+
+                <span>Sen</span>
+                <span>Sel</span>
+                <span>Rab</span>
+                <span>Kam</span>
+                <span>Jum</span>
+                <span>Sab</span>
+                <span>Min</span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
